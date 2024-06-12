@@ -1,0 +1,124 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.logout{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    text-align: center;
+}
+main, #wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+header, footer{
+    background-color: #323033;
+}
+.top-element{
+    display: flex;
+    align-items: center;
+}
+#wrapper{
+    justify-content: left;
+    gap: 15px;
+    padding: 10px;
+}
+.header-logo{
+    width: 7.5%;
+    border-radius: 50%;
+}
+nav{
+    width: 60%;
+    justify-content: space-evenly;
+}
+.link-style{
+    text-decoration: none;
+    color: white;
+    width: 20%;
+    text-align: center;
+}
+td{
+    color: #323033;
+    border: #323033 2px solid;
+    padding: 5px;
+}
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.list-link{
+    color: #323033;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+label{
+    color: #323033;
+}
+.form-item, .form-item-button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.form-item-button{
+    flex-direction: row;
+    gap: 10px;
+}
+.form-button{
+    margin: 5px 0 0 0;
+}
+.image-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.field-text, .form-button, .form-button::file-selector-button, button, select, option{
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #323033;
+    color: white;
+}
+.form-button::file-selector-button{
+    background-color: #5f5b61;
+    padding: 5px;
+}
+select.form-item{
+    margin-top: 0;
+}
+label[for="photo"]{
+    margin-top: 9px;
+}
+footer{
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 1280px){
+    main{
+        width: 100%;
+    }
+    table{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .article-section{
+        flex-direction: column;
+    }
+    .top-element, #wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+}

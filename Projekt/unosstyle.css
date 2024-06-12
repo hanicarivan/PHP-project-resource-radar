@@ -1,0 +1,101 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+main, #wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+.logout{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    text-align: center;
+}
+header, footer{
+    background-color: #323033;
+}
+.top-element{
+    display: flex;
+    align-items: center;
+}
+#wrapper{
+    justify-content: left;
+    gap: 15px;
+    padding: 10px;
+}
+.header-logo{
+    width: 7.5%;
+    border-radius: 50%;
+}
+nav{
+    width: 60%;
+    justify-content: space-evenly;
+}
+.link-style{
+    text-decoration: none;
+    color: white;
+    width: 20%;
+    text-align: center;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+}
+label{
+    color: #323033;
+}
+.form-item, .form-item-button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.form-item-button{
+    flex-direction: row;
+    gap: 10px;
+}
+.form-button{
+    margin: 5px 0 0 0;
+}
+.field-text, .form-button, .form-button::file-selector-button, button, select, option{
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #323033;
+    color: white;
+}
+select.form-item{
+    margin-top: 0;
+}
+label[for="photo"]{
+    margin-top: 9px;
+}
+.form-button::file-selector-button{
+    padding: 0;
+}
+footer{
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px){
+    main{
+        width: 100%;
+    }
+    .article-section{
+        flex-direction: column;
+    }
+    .top-element, #wrapper{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+    }
+}
