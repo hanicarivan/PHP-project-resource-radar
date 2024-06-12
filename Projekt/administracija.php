@@ -142,7 +142,7 @@
                     $content = mysqli_real_escape_string($dbc, $_POST['content']);
                     $category = mysqli_real_escape_string($dbc, $_POST['category']);
                     $save = isset($_POST['save']) ? 1 : 0;
-                    $photo = $row['slika']; // Default to the existing photo
+                    $photo = $row['slika'];
                     if (!empty($_FILES['photo']['name'])) {
                         $photo = $_FILES['photo']['name'];
                         move_uploaded_file($_FILES['photo']['tmp_name'], UPLPATH . $photo);
