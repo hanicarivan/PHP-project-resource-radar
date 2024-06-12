@@ -20,7 +20,6 @@
     </style>
     <script>
             function validateForm() {
-                // Remove existing error messages
                 var labels = document.querySelectorAll('form[name="newsForm"] label');
                 labels.forEach(function(label) {
                     label.classList.remove('error-message');
